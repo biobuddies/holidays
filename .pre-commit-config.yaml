@@ -17,7 +17,7 @@ repos:
           - id: ruff-check-fix
           - id: ruff-format
           - id: shellcheck
-          - id: shfmt
+          # - id: shfmt  # GitHub 503 errors downloading shfmt binary
           - id: trailing-whitespace-fixer
           - id: typos
           - id: validate-pyproject

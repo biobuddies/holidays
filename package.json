@@ -1,0 +1,7 @@
+{
+    "devDependencies": {
+        "basedpyright": "*",
+        "prettier": "*",
+        "prettier-plugin-toml": "*"
+    }
+}

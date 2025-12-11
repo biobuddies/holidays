@@ -1,0 +1,38 @@
+[build-system]
+requires = ['setuptools>=61.0', 'setuptools_scm[toml]>=6.2', 'wheel']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'django-holidays'
+description = 'Django holidays management package'
+dynamic = ['version']
+dependencies = [
+    'django',
+    'djangorestframework',
+]
+
+[project.optional-dependencies]
+dev = [
+    'actionlint-py',
+    'cookiecutter',
+    'django-upgrade',
+    'djlint',
+    'hadolint-py @ git+https://github.com/AleksaC/hadolint-py.git',
+    'pre-commit',
+    'pre-commit-hooks',
+    'ruff',
+    'rust-just',
+    'shellcheck-py',
+    'shfmt-py',
+    'typos',
+    'validate-pyproject',
+    'yamllint',
+]
+
+[tool.basedpyright]
+reportUnusedCallResult = false
+
+[tool.ruff]
+extend = '.biobuddies/ruff.toml'
+
+[tool.setuptools_scm]
